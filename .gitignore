@@ -5,3 +5,6 @@
 /Rmath.dll
 /libRmath.a
 /stamp-src
+/test-static.exe
+/test.exe
+/libRmath.dll.a

@@ -48,16 +48,16 @@ test-static.exe: src/nmath/test.c
 	$(CC) -I./include -o $@ $< -L. libRmath.a
 	./$@
 
-check: distclean
-	@rm -f check.log
-	@if test -n "${TEST_MC_CORES}"; then \
-	  echo "using ${TEST_MC_CORES} cores" > check.log; \
-	  $(MAKE) -j ${TEST_MC_CORES} all >> check.log 2>&1; \
-	  $(MAKE) test >> check.log 2>&1; \
-	else \
-	  $(MAKE) all test > check.log 2>&1; \
-	fi
-	@$(ECHO) "check output can be found in src/nmath/standalone/check.log"
+##	check: distclean
+##		@rm -f check.log
+##		@if test -n "${TEST_MC_CORES}"; then \
+##		  echo "using ${TEST_MC_CORES} cores" > check.log; \
+##		  $(MAKE) -j ${TEST_MC_CORES} all >> check.log 2>&1; \
+##		  $(MAKE) test >> check.log 2>&1; \
+##		else \
+##		  $(MAKE) all test > check.log 2>&1; \
+##		fi
+##		@$(ECHO) "check output can be found in src/nmath/standalone/check.log"
 
 clean:
 	@$(RM) $(DEPENDS_NMATH) $(OBJECTS_NMATH) *.def Makedeps stamp-src
