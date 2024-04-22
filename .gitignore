@@ -1,0 +1,7 @@
+/src/nmath/*.d
+/src/nmath/*.o
+/Makedeps
+/Rmath.def
+/Rmath.dll
+/libRmath.a
+/stamp-src
