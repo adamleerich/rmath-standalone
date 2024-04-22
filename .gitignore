@@ -8,3 +8,6 @@
 /test-static.exe
 /test.exe
 /libRmath.dll.a
+
+# /.vscode/
+/.vscode/c_cpp_properties.json
